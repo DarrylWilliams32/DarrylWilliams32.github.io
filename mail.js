@@ -1,8 +1,6 @@
-/*Initialize button(s)*/
-bt1.onclick = mail;
 
 //creates function to get form data
-function mail() {
+function sendEmail() {
     var formData = {
         name: document.getElementById("tb1").value,
             companyName: document.getElementById("tb2").value,
@@ -35,6 +33,7 @@ fetch('/send-email', {
 });
 }
 
+/*Beginning of node code*/
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -61,7 +60,7 @@ app.post('/send-email', (req, res) => {
   // Setup email data with unicode symbols
   let mailOptions = {
     from: '"Your Name" <your_email@example.com>',
-    to: 'admin@example.com', // Site administrator's email
+    to: 'darrylwilliams6@gmail.com', // Site administrator's email
     subject: 'New Message from Website',
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
   };
