@@ -1,4 +1,5 @@
 #Portfilio site for Darryl Williams
+
 ##What is my experience?
 My professional experience includes 10+ years of sales and customer service with 3 years of software development. This mixed experience has made me both technically sound in the field of Software Engineering, but also adept at communicating with stakeholders and collegues alike. I have the saavy to communicate with a wide range of people while also being able to articulate complicated coding topics in ways non-tech people understand. This makes me an asset to any team, as communication is often the biggest hurdle for project execution. I'm also a fast learner and pick up on neccessary skills quickly.
 
