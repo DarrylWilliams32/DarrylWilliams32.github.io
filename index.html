@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome 5.15.1 CSS -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+        <!-- Calendly badge widget begin -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/darrylwilliams6/30minute?primary_color=fe3fcf', text: 'Hiring for a job?', color: '#fe3fcf', textColor: '#000000', branding: undefined }); }</script>
+        <!-- Calendly badge widget end -->
+    <title>Darryl the Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="mail.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="resources\logo.png" class="logo" alt="">
+            <div>
+                <button class="language-btn"> English <img src="Images/down-icon.png" alt=""> </button>
+                <button> Sign In </button>
+            </div>
+        </nav>
+        <header class="header-content">
+            <div class="rows">
+                <!--Start of form container-->
+                <div id="container">
+                    <!--Start of form wrap-->
+                    <div class="form-wrap">
+                    <form class="get-quote" id="fr1">
+                        <h2>Get a Quote</h2>
+                            <!--Start of Form-->
+                            <!--need to add a form action in this-->
+                            <form class="get-quote" action="#">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" id="tb1" required/><br>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Company Name" id="tb2" /><br>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" id="tb3" required/><br>
+                                </div>
+                                <div class="form-group">
+                                    <label class="projectDeets"><strong>Enter your project details:</strong></label>
+                                    <textarea id="tb4" class="projectDeets textA" placeholder="I need you to code this..." required> </textarea> <br>
+                                </div>
+                                <button type="submit" id="bt1" value="click"> Get Started</button>
+                            </form>
+                    </div>
+                </div>
+                <div id="container2">
+                    <h1>Boundless potential.</h1>
+                    <h3>The only limits that exist are those we place upon ourselves</h3>
+                    <p>Need development work? Enter your project info to receive a quote.</p> 
+                </div>
+            </div>   
+        </header>
+    </div>
+    <section class="previousProjects">
+        <div class="row">
+            <div class="text-col">
+                <h2>Custom Websites</h2>
+                <p>I've created custom 'mobile first' websites from scratch.</p>
+            </div>
+            <div class="img-col">
+                <img src="resources/glammyGroomers.png" alt="picture of glammy groomer website header and nav bar">
+                    <button type="button" class="expandDesign">Expand</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="resources/barkingBenny.png" alt="picture of the we are broadway website header and nav bar">
+                    <button type="button" class="expandDesign">Expand</button>
+            </div>
+            <div class="text-col">
+                <h2>Shopify and Wordpress Sites.</h2>
+                <p>By using the latest technologies, I've been able to simplify web presense for small-medium businesses.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-col">
+                <h2>Do stuff here</h2>
+                <p>How much stuff are you tryna do bra?</p>
+            </div>
+            <div class="img-col">
+                <img src="resources/weAreBroadway.png" alt="picture of the barking benny shopify store banner and nav bar">
+                    <button type="button" class="expandDesign">Expand</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="resources/davesBurgers.png" alt="picture of the daves burgers banner, nav bar, and menu">
+                    <button type="button" class="expandDesign">Expand</button>
+            </div>
+            <div class="text-col">
+                <h2>Not sure what to put here.</h2>
+                <p>What does the fox say?</p>
+            </div>
+        </div>
+    </section>
+    <!-- Frequently Asked Questions -->
+    <section class="faq">
+        <h2> Frequently Asked Questions </h2>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What languages have you worked with?</label>
+                <div class="content">
+                    <p>I've experimented with many many languages, but I'm most proficient with: HTML, CSS, JavaScript (as well as it's frameworks). I also have experience with:Ruby, Python, Kotlin, SQL and PHP.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">What have you built?</label>
+                <div class="content">
+                    <p>Not including this site, I've built custom websites, Shopify stores, Wordpress sites, and Android applications.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="third">
+                <label for="third">What field do you want to be in?</label>
+                <div class="content">
+                    <p>If given the opportunity, I would like to either go into Fintech or gaming.</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="fourth">
+                <label for="fourth">How do we get in contact with you?</label>
+                <div class="content">
+                    <p>Getting in contact is simple; I have all major social media accounts and can be reached right here through the site. Either follow the social media icons at the bottom or select the 'send an email' icon above.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- --------------------- FOOTER ---------------------->
+    <!--need to finish adding links to my socials-->
+    <footer class="foot">
+        <div class="wrapper">
+            <a href="#" class="icon facebook">
+              <div class="tooltip">Facebook</div>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </a>
+            <a href="#" class="icon twitter">
+              <div class="tooltip">Twitter</div>
+              <span><i class="fab fa-twitter"></i></span>
+            </a>
+            <a href="#" class="icon instagram">
+              <div class="tooltip">Instagram</div>
+              <span><i class="fab fa-instagram"></i></span>
+            </a>
+            <a href="https://github.com/DarrylWilliams32" class="icon github">
+              <div class="tooltip">Github</div>
+              <span><i class="fab fa-github"></i></span>
+            </a>
+            <a href="https://www.youtube.com/channel/UCCsZ2j-iSlK7p3LEJLWNQ7w" class="icon youtube">
+              <div class="tooltip">Youtube</div>
+              <span><i class="fab fa-youtube"></i></span>
+            </a>
+          </div>
+    </footer>
+</body>
+</html>
