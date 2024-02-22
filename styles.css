@@ -3,7 +3,18 @@
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    --main-color: #FE3FCF;
 }
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+a:hover {
+    color: light
+}
+
 body{
     background: black;
     color: white;
@@ -31,7 +42,7 @@ nav{
 nav button{
     border: 0;
     outline: 0;
-    background: #FE3FCF;
+    background: var(--main-color);
     color: white;
     padding: 7px 20px;
     font-size: 12px;
@@ -110,7 +121,7 @@ nav button{
 
 
 .get-quote button{
-    background: #FE3FCF;
+    background: var(--main-color);
     display: block;
     width: 100%;
     padding: 15px 20px;
@@ -142,17 +153,21 @@ nav button{
     margin: 20px;
     flex-wrap: hidden;
 }
+
+/*Body background styles*/
+.bulkOfSite {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(resources/code.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 /*---------------Portfolio----------------------*/
 .previousProjects {
     padding: 50px 12%;
     font-size: 22px;
     width: 100%;
     overflow: hidden;
-    background: #C04848;  /* fallback for old browsers */
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(resources/code.jpg);
-    /*background-size: cover;*/
-    background-position: center;
-}
+    }
 .row{
     display: flex;
     width: 100%;
@@ -180,7 +195,7 @@ nav button{
 }
 
 .expandDesign {
-background: #FE3FCF;
+background: var(--main-color);
 text-align: center;
 justify-content: center;
 display: flex;
@@ -200,7 +215,8 @@ transition: 1s;
     text-align: center;
     font-size: 18px;
     border-top: 6px solid #777;
- }
+}
+
  .faq h2{
     font-weight: 500;
     font-size: 40px;
@@ -264,9 +280,15 @@ transition: 1s;
     margin-bottom: 0;
  }
 
+ .disclosureStatement {
+ text-align: center;
+ text-overflow: clip;
+ position: relative;
+ }
+
  .wrapper .icon{
   position: relative;
-  background-color: #FE3FCF;
+  background-color: var(--main-color);
   border-radius: 50%;
   margin: 10px;
   width: 50px;
