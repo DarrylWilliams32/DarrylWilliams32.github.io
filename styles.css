@@ -1,3 +1,5 @@
+/*Global Rules*/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,19 +8,25 @@
     --main-color: #FE3FCF;
 }
 
+html {
+    font-size: 20px;
+}
+
 a {
     text-decoration: underline;
     color: white;
 }
 
 a:hover {
-    color: light
+    color: var(--main-color)
 }
 
 body{
     background: black;
     color: white;
 }
+
+/*Header Rules*/
 .header{
     width: 100%;
     height: 100vh;
@@ -77,6 +85,7 @@ nav button{
     line-height: 70px;
     font-weight: 600;
     max-width: 650px;
+    display: inline-block;
 }
 
 .header-content h3{
@@ -94,24 +103,48 @@ nav button{
     align-items: center;
 }
 /****Quote Form Styles****/
-
-#container {
-    max-width: 450px;
-    margin: 30px auto;
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 99%; /* Adjust the width as needed for layout*/
+    margin: 20px auto;
     padding: 10px;
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-.form-wrap {
+.form-container {
+    flex: 1; /* Take up available space */
+    max-width: 450px;
+    margin-left: 10%;
+}
+
+.quote-container {
+    flex: 1; /* Take up available space */
+    margin-left: 50px; /* Adjust spacing between form and quote */
+    margin-right: 10%;
+}
+
+.get-quote {
     width: 100%;
     background: #fff;
+    font-size: 20px;
     padding: 15px 25px;
     color: black;
-    border-top: 4px solid #FAE682;
+    border-top: 4px solid var(--main-color);
     border-radius: 10px;
 }
 
-.form-wrap .form-group input {
+.form-label h2 {
+    display: block;
+    margin-bottom: 1px;
+    font-size: 2rem;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.form-group {
+    max-width: 400px;
     width: 100%;
     padding: 10px;
     border: black 1px solid;
@@ -119,8 +152,11 @@ nav button{
     margin: 5px;
 }
 
+.get-quote input {
+    font-size: 1rem;
+}
 
-.get-quote button{
+.get-quote button {
     background: var(--main-color);
     display: block;
     width: 100%;
@@ -136,22 +172,21 @@ nav button{
 .get-quote button:hover {
     background-color: #FAE682;
     color: black;
-
 }
+
 .projectDeets {
     display: block;
     margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .textA {
     border: black solid 2px;
+    font-size: 1rem;
     width: 100%;
+    max-width: 400px;
     border-radius: 5px;
-}
-/****Quote bar styles****/
-.container2 {
-    margin: 20px;
-    flex-wrap: hidden;
+    overflow: auto;
 }
 
 /*Body background styles*/

@@ -11,6 +11,7 @@
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/darrylwilliams6/30minute?primary_color=fe3fcf', text: 'Hiring for a job?', color: '#fe3fcf', textColor: '#000000', branding: undefined }); }</script>
         <!-- Calendly badge widget end -->
+        <!--SMTP server script-->
     <title>Darryl the Developer</title>
     <link rel="stylesheet" href="styles.css">
     <script src="mail.js"></script>
@@ -25,39 +26,24 @@
             </div>
         </nav>
         <header class="header-content">
-            <div class="rows">
-                <!--Start of form container-->
-                <div id="container">
-                    <!--Start of form wrap-->
-                    <div class="form-wrap">
-                        <form class="get-quote" id="fr1">
-                            <h2>Get a Quote</h2>
-                            <!--Start of Form-->
-                            <form class="get-quote" id="quoteForm" action="#">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Name" id="tb1" required/><br>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="Company Name" id="tb2" /><br>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" placeholder="Email" id="tb3" required/><br>
-                                </div>
-                                <div class="form-group">
-                                    <label class="projectDeets"><strong>Enter your project details:</strong></label>
-                                    <textarea id="tb4" class="projectDeets textA" placeholder="I need you to code this..." required></textarea> <br>
-                                </div>
-                                <button type="button" id="bt1" onclick="sendEmail()">Get Started</button>
-                            </form>
-                        </form>
-                    </div>
+            <div class="container">
+                <div class="form-container">
+                    
+                    <form class="get-quote" id="quoteForm" action="#">
+                    <label class="form-label" for="quoteForm"><h2>Get a Quote</h2></label>
+                        <input type="text" class="form-group" placeholder="Name" id="name" required/><br>
+                        <input type="text" class="form-group" placeholder="Company Name" name= "company_name" id="company_name" /><br>
+                        <input type="email" class="form-group" placeholder="Email" name="email" id="email" required/><br>
+                        <label class="projectDeets" for="project_details"><strong>Enter your project details:</strong></label>
+                        <textarea name="project_details" id="project_details" class="projectDeets textA" placeholder="I need you to code this..." required></textarea> <br>
+                        <button type="submit" name="submit" id="submit">Get Started</button>
+                    </form>
                 </div>
-                <div id="container2">
-                    <h1>Boundless potential.</h1>
-                    <h3>The only limits that exist are those we place upon ourselves</h3>
-                    <p>Need development work? Enter your project info to receive a quote.</p> 
+                <div class="quote-container">
+                    <h1>A quote is something whitty</h1>
+                    <p>But in this case, a quote is what you get when you need something done. Hire a developer who is skilled, fast, and reliable. Fill out the 'Get a quote' form to get started.</p> 
                 </div>
-            </div>   
+            </div>
         </header>
     </div>
     <div class="bulkOfSite">
@@ -163,8 +149,8 @@
               <span><i class="fab fa-youtube"></i></span>
             </a>
           </div>
-          <p class="disclosureStatement">This website is owned and operated by Darryl Williams II. Unless otherwise indicated, all content, images, logos, and trademarks are the property of Darryl Williams II and protected by copyright laws.
-              Any unauthorized use of the materials on this site may violate copyright, trademark, and other applicable laws and could result in criminal or civil penalties. 
+          <p class="disclosureStatement">This website is owned and operated by Darryl Williams II. Unless otherwise indicated, all content, images, logos, and trademarks are the property of Darryl Williams II and protected by copyright laws.<br>
+              Any unauthorized use of the materials on this site may violate copyright, trademark, and other applicable laws and could result in criminal or civil penalties.<br> 
               For inquiries regarding the use of materials from this website, please contact: <a href="darrylwilliams6@gmail.com">DarrylWilliams6@gmail.com</a>.</p>
     </footer>
 </body>

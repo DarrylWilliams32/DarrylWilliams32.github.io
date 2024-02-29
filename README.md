@@ -92,3 +92,6 @@ Analytical Thinking | Front-End | wordpress | Development | Back-end development
 Development | debugging | object oriented
 programming | computer engineering | attention to detail | critical thinking | SEO | bootstrap | js frameworks
 Interests: Marketing & Operations, Analytics, Public Speaking, Basketball, Fintech, Gaming
+
+## Donate to this or future projects
+Please feel free to [Donate](https://donate.stripe.com/3cs5lGda765X0nK288) to this and future projects!
