@@ -12,6 +12,11 @@ html {
     font-size: 20px;
 }
 
+body{
+    background: black;
+    color: white;
+}
+
 a {
     text-decoration: underline;
     color: white;
@@ -21,9 +26,15 @@ a:hover {
     color: var(--main-color)
 }
 
-body{
-    background: black;
-    color: white;
+h2 {
+    margin-bottom: 1px;
+    font-size: 2em;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.centered-text{
+    text-align: center;
 }
 
 /*Header Rules*/
@@ -78,7 +89,7 @@ nav button{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    /*margin-top: 10px;*/
+    margin-top: 10px;
 }
 .header-content h1{
     font-size: 60px;
@@ -254,10 +265,10 @@ transition: 1s;
 
  .faq h2{
     font-weight: 500;
-    font-size: 40px;
+    font-size: 2rem;
  }
- .accordion{
-    margin: 60px auto;
+ .accordion {
+    margin: 20px auto 60px auto;
     width: 100%;
     max-width: 750px;
  }
@@ -278,7 +289,7 @@ transition: 1s;
     position: relative;
  }
 
- label::after{
+ .faq label::after{
     content: '+';
     font-size: 34px;
     position: absolute;
@@ -373,9 +384,9 @@ transition: 1s;
 .wrapper .icon:hover .tooltip {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
   background-color: #3b5999;
   color: #ffffff;
 }
