@@ -416,11 +416,15 @@ transition: 1s;
 }
 
 
-/*--------------------MEDIA QUERIES FOR MEDIUM SCREENS--------------------------*/
-@media only screen and (max-width: 1045px){
+/*--------------------MEDIA QUERIES FOR MEDIUM-LARGE SCREENS--------------------------*/
+@media only screen and (max-width: 1400px){
 
     .header-content h1{
         font-size: 40px;
+    }
+
+    .get-quote {
+        max-height: 350px;
     }
 }
  /* ------------------ MEDIA QUERIES FOR SMALL SCREEN -------------------------- */
