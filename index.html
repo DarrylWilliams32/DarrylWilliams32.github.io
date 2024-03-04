@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Font Awesome 5.15.1 CSS -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+        <script src="https://kit.fontawesome.com/cb78e564c1.js" crossorigin="anonymous"></script>
         <!-- Calendly badge widget begin -->
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
         <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/darrylwilliams6/30minute?primary_color=fe3fcf', text: 'Hiring for a job?', color: '#fe3fcf', textColor: '#000000', branding: undefined }); }</script>
         <!-- Calendly badge widget end -->
+        <!--SMTP server script-->
     <title>Darryl the Developer</title>
     <link rel="stylesheet" href="styles.css">
     <script src="mail.js"></script>
@@ -25,46 +27,32 @@
             </div>
         </nav>
         <header class="header-content">
-            <div class="rows">
-                <!--Start of form container-->
-                <div id="container">
-                    <!--Start of form wrap-->
-                    <div class="form-wrap">
-                    <form class="get-quote" id="fr1">
-                        <h2>Get a Quote</h2>
-                            <!--Start of Form-->
-                            <!--need to add a form action in this-->
-                            <form class="get-quote" action="#">
-                                <div class="form-group">
-                                    <input type="text" placeholder="Name" id="tb1" required/><br>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="Company Name" id="tb2" /><br>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" placeholder="Email" id="tb3" required/><br>
-                                </div>
-                                <div class="form-group">
-                                    <label class="projectDeets"><strong>Enter your project details:</strong></label>
-                                    <textarea id="tb4" class="projectDeets textA" placeholder="I need you to code this..." required> </textarea> <br>
-                                </div>
-                                <button type="submit" id="bt1" value="click"> Get Started</button>
-                            </form>
-                    </div>
+            <div class="container">
+                <div class="form-container">
+                    
+                    <form class="get-quote" id="quoteForm" action="#">
+                    <label class="form-label" for="quoteForm"><h2>Get a Quote</h2></label>
+                        <input type="text" class="form-group" placeholder="Name" id="name" required/><br>
+                        <input type="text" class="form-group" placeholder="Company Name" name= "company_name" id="company_name" /><br>
+                        <input type="email" class="form-group" placeholder="Email" name="email" id="email" required/><br>
+                        <label class="projectDeets" for="project_details"><strong>Enter your project details:</strong></label>
+                        <textarea name="project_details" id="project_details" class="projectDeets textA" placeholder="I need you to code this..." required></textarea> <br>
+                        <button type="submit" name="submit" id="submit">Get Started</button>
+                    </form>
                 </div>
-                <div id="container2">
-                    <h1>Boundless potential.</h1>
-                    <h3>The only limits that exist are those we place upon ourselves</h3>
-                    <p>Need development work? Enter your project info to receive a quote.</p> 
+                <div class="quote-container">
+                    <h1>A quote is something whitty</h1>
+                    <p>But in this case, a quote is what you get when you need something done. Hire a developer who is skilled, fast, and reliable. Fill out the 'Get a quote' form to get started.</p> 
                 </div>
-            </div>   
+            </div>
         </header>
     </div>
+    <div class="bulkOfSite">
     <section class="previousProjects">
         <div class="row">
             <div class="text-col">
-                <h2>Custom Websites</h2>
-                <p>I've created custom 'mobile first' websites from scratch.</p>
+                <h2 class="centered-text">Custom Websites</h2>
+                <p class="centered-text">I've created custom 'mobile first' websites from scratch.</p>
             </div>
             <div class="img-col">
                 <img src="resources/glammyGroomers.png" alt="picture of glammy groomer website header and nav bar">
@@ -77,14 +65,14 @@
                     <button type="button" class="expandDesign">Expand</button>
             </div>
             <div class="text-col">
-                <h2>Shopify and Wordpress Sites.</h2>
-                <p>By using the latest technologies, I've been able to simplify web presense for small-medium businesses.</p>
+                <h2 class="centered-text">Shopify and Wordpress Sites</h2>
+                <p class="centered-text">By using the latest technologies, I've been able to simplify web presense for small-medium businesses.</p>
             </div>
         </div>
         <div class="row">
             <div class="text-col">
-                <h2>Do stuff here</h2>
-                <p>How much stuff are you tryna do bra?</p>
+                <h2 class="centered-text">Websites your clients will love</h2>
+                <p class="centered-text">Whether it's art or organizations, having a site makes a world of difference.</p>
             </div>
             <div class="img-col">
                 <img src="resources/weAreBroadway.png" alt="picture of the barking benny shopify store banner and nav bar">
@@ -97,8 +85,8 @@
                     <button type="button" class="expandDesign">Expand</button>
             </div>
             <div class="text-col">
-                <h2>Not sure what to put here.</h2>
-                <p>What does the fox say?</p>
+                <h2 class="centered-text">Food tastes better with a website?</h2>
+                <p class="centered-text">Obviously, food tastes better in real life, but how will your future fans find you without a website?</p>
             </div>
         </div>
     </section>
@@ -136,19 +124,20 @@
             </li>
         </ul>
     </section>
+</div>
     <!-- --------------------- FOOTER ---------------------->
     <!--need to finish adding links to my socials-->
     <footer class="foot">
         <div class="wrapper">
-            <a href="#" class="icon facebook">
-              <div class="tooltip">Facebook</div>
-              <span><i class="fab fa-facebook-f"></i></span>
+            <a href="https://www.linkedin.com/in/darryl-williams-ii/" class="icon linkedin">
+              <div class="tooltip">Linkedin</div>
+              <span><i class="fa-brands fa-linkedin"></i></span>
             </a>
-            <a href="#" class="icon twitter">
+            <a href="https://twitter.com/thedeewilliams" class="icon twitter">
               <div class="tooltip">Twitter</div>
               <span><i class="fab fa-twitter"></i></span>
             </a>
-            <a href="#" class="icon instagram">
+            <a href="https://www.instagram.com/theofficialdarrylwilliams/" class="icon instagram">
               <div class="tooltip">Instagram</div>
               <span><i class="fab fa-instagram"></i></span>
             </a>
@@ -161,6 +150,9 @@
               <span><i class="fab fa-youtube"></i></span>
             </a>
           </div>
+          <p class="disclosureStatement">This website is owned and operated by Darryl Williams II. Unless otherwise indicated, all content, images, logos, and trademarks are the property of Darryl Williams II and protected by copyright laws.<br>
+              Any unauthorized use of the materials on this site may violate copyright, trademark, and other applicable laws and could result in criminal or civil penalties.<br> 
+              For inquiries regarding the use of materials from this website, please contact: <a href="darrylwilliams6@gmail.com">DarrylWilliams6@gmail.com</a>.</p>
     </footer>
 </body>
 </html>

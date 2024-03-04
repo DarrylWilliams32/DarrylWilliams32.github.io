@@ -1,15 +1,17 @@
-#Portfilio site for Darryl Williams
-##What is my experience?
+# Portfilio site for Darryl Williams
+
+## What is my experience?
+
 My professional experience includes 10+ years of sales and customer service with 3 years of software development. This mixed experience has made me both technically sound in the field of Software Engineering, but also adept at communicating with stakeholders and collegues alike. I have the saavy to communicate with a wide range of people while also being able to articulate complicated coding topics in ways non-tech people understand. This makes me an asset to any team, as communication is often the biggest hurdle for project execution. I'm also a fast learner and pick up on neccessary skills quickly.
 
 See below for my full resume
 
-##Resume
+## Resume
 
-###Darryl Williams II
+**Darryl Williams II**
 Cincinnati, OH | [LinkedIn](https://www.linkedin.com/in/darryl-williams-ii/) | 513-349-2691 | [darrylwilliams6@gmail.com](darrylwilliams6@gmail.com)
 ________________________________________________________________________________________
-###WORK EXPERIENCE
+## WORK EXPERIENCE
 **Diamond Screens LLC**, Cincinnati, OH
 **Lead Software Engineer** (October 2022 Present)
 -Improved version system by utilizing tools like Git and Github.
@@ -39,7 +41,7 @@ development team.
 -Achieved Top Collector 3 months in a row
 -Mentored new agents on best practices and provided continued mentorship for struggling agents.
 
-###PROJECT EXPERIENCE
+## PROJECT EXPERIENCE
 ________________________________________________________________________________________
 **FreeCodeCamp.com**, Remote
 RPG Game
@@ -64,7 +66,7 @@ Introduction to computer science (2023)
 -Created Caesar cipher decipher program coding in C#
 -Learned and applied basics of computer engineering
 
-###EDUCATION
+## EDUCATION
 ________________________________________________________________________________________
 **Freecodecamp**
 Responsive Web Design Cert
@@ -82,7 +84,7 @@ Learn Kotlin 2021
 Full Stack Developer 2020
 
 
-###SKILLS & INTERESTS
+## SKILLS & INTERESTS
 ________________________________________________________________________________________
 **Skills:** Microsoft Office Suite (Excel, PowerPoint, Word) | Node.js | CSS3 | HTML5 | JQuery | Express.js |
 React.js | Java | mongoDB | javascript | PostgreSQL | Git | Github | Problem solving skills | Leadership |
@@ -90,3 +92,6 @@ Analytical Thinking | Front-End | wordpress | Development | Back-end development
 Development | debugging | object oriented
 programming | computer engineering | attention to detail | critical thinking | SEO | bootstrap | js frameworks
 Interests: Marketing & Operations, Analytics, Public Speaking, Basketball, Fintech, Gaming
+
+## Donate to this or future projects
+Please feel free to [Donate](https://donate.stripe.com/3cs5lGda765X0nK288) to this and future projects!
